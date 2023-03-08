@@ -1,0 +1,280 @@
+.hr {
+    border-width: 1px;
+    border-color: #e8e9e8;
+  }
+  
+  .img {
+    width: 100%;
+    height: 130%;
+    position: absolute;
+  }
+  
+  .category1 {
+    border-radius: 7px;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(243, 239, 239);
+    border: 3px solid #ffffff;
+    margin: 1% 5%;
+  }
+  
+  .searchList {
+    background-color: rgb(243, 239, 239);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+  }
+  
+  .searchflex {
+    display: flex;
+    padding-right: 8%;
+  }
+  
+  .category2 {
+    margin: 0 0 0 5%;
+  }
+  .all {
+    background-color: black;
+    padding-bottom: 10%;
+  }
+  .item {
+    list-style: none;
+  }
+  .itemA {
+    list-style: none;
+    font-weight: bold;
+  
+    font-size: large;
+  }
+  .itemB {
+    list-style: none;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  .side {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* @media (min-width: 600px) {
+    .side div {
+      width: 48%;
+    }
+    .side div:nth-child(2n + 1) {
+      clear: both;
+    }
+  }
+  @media (min-width: 800px) {
+    .side div {
+      width: 31.3333%;
+    }
+    .side div:nth-child(2n + 1) {
+      clear: none;
+    }
+    .side div:nth-child(3n + 1) {
+      clear: both;
+    }
+  } */
+  
+  .a {
+    position: relative;
+  }
+  
+  .a::after {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    content: ''; /*本来は、擬似要素に入るテキストなどを’’内に指定。今回はアンダーラインなので何も記載しない*/
+    width: 100%;
+    height: 11px;
+    background: linear-gradient(
+      transparent 20%,
+      #41d7fd,
+      rgb(0, 255, 166)
+    );
+    line-height: 1;
+    bottom: -1px; /*アンダーラインが位置する、各リストの下端からの高さ　ヘッダーの下端に合わせています*/
+    visibility: hidden; /*ホバー前に、アンダーラインを可視化しない*/
+    transition: 0.3s;
+    bottom: 7px; /*アンダーラインが現れ始める位置*/
+  }
+  
+  .a:hover::after {
+    visibility: visible; /*ホバー後、アンダーラインを可視化する*/
+    opacity: 1; /*アンダーラインが透明な状態からアニメーションが開始され、ホバーを話して終了する際も、徐々に透明な状態に戻る。*/
+    transition: 0.3s; /*変形の時間*/
+    bottom: 1px;
+  }
+  
+  .itemsImg {
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 260px;
+  }
+  
+  .imgPro {
+    transition: 1s all;
+  }
+  
+  .imgPro:hover {
+    transform: scale(1.2, 1.2);
+    transition: 1s all;
+  }
+  
+  .ul {
+    margin: 0 auto;
+  
+    width: 260px;
+  }
+  
+  .side .items_list1 {
+    margin: 2% auto;
+    padding: 2%;
+    background-color: rgb(245, 245, 242);
+    border-radius: 5px;
+  }
+  
+  .items_list2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+  }
+  
+  .category3 {
+    display: flex;
+    margin-right: 2%;
+  }
+  
+  .category {
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+  }
+  
+  .next_page {
+    text-align: right;
+  }
+  
+  .next_list {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+  }
+  
+  .form {
+    background-color: rgb(242, 239, 239);
+    margin: 10%;
+    padding: 5%;
+    border-radius: 10px;
+  }
+  
+  .h2 {
+    padding: 1rem 3rem;
+    color: rgb(8, 8, 8);
+    border-radius: 100vh;
+    background-image: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#5de1d6),
+      to(#1ed6ee)
+    );
+    background-image: -webkit-linear-gradient(
+      right,
+      #5de1d6 0%,
+      #1ed6ee 100%
+    );
+    background-image: linear-gradient(
+      to left,
+      #5de1d6 0%,
+      #1ed6ee 100%
+    );
+    white-space: nowrap;
+  }
+  
+  .footer {
+    background-color: #454545;
+    width: 100%;
+    padding-top: 8%;
+    color: white;
+    text-align: right;
+  }
+  
+  .border {
+    background: linear-gradient(
+      transparent 60%,
+      rgb(167, 249, 119) 60%
+    );
+  }
+  
+  .imgCenter {
+    width: 90%;
+    height: 70%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  
+  .displayCenter {
+    display: grid;
+    padding: 0 auto;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  .titleCenter {
+    font-size: 60px;
+  }
+  
+  .titlesCenter {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+  
+  .search_box {
+    display: inline-block; /* なくても大丈夫だけど、念の為 */
+    position: relative; /* 基準値とする */
+    height: 5px;
+  }
+  
+  .search_box input {
+    padding: 3px 0 3px 2em; /* アイコンを設置するため左の余白を多めに指定*/
+    border: rgb(202, 202, 202) solid 3px;
+    background-color: rgb(245, 245, 242);
+    width: 25rem;
+    height: 45px;
+    border-radius: 260px;
+    overflow: hidden;
+  }
+  
+  .page {
+    text-align: center;
+  }
+  
+  .paging {
+    padding: 0.5rem 0.7rem;
+    background: #26a4ca;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 25rem;
+  }
+  
+  .paging:active {
+    background: #26a4ca;
+    color: black;
+  }
+  
+  .background {
+    background: rgba(255, 255, 255, 0.55);
+    position: relative;
+    padding: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
+  }
+  
